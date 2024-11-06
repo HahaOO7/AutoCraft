@@ -81,7 +81,6 @@ public class AutoCraft extends JavaPlugin {
                 }
                 crafterItem = newCrafterItem;
                 getConfig().set("crafterItem", Base64.getEncoder().encodeToString(crafterItem.serializeAsBytes()));
-                saveConfig();
                 sender.sendMessage(Component.text("Crafter item updated!", NamedTextColor.GREEN));
                 return Command.SINGLE_SUCCESS;
             });
